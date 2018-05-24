@@ -1,0 +1,53 @@
+{
+  "name": "martianatwork/laravel-query-cache",
+  "description": "A laravel query cache",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "query",
+    "cache"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "Nick",
+      "email": ""
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "illuminate/support": "~5.6.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.6.0",
+    "phpunit/phpunit": "~7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "martianatwork\\LaravelQueryCache\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "martianatwork\\LaravelQueryCache\\Tests\\": "tests"
+    },
+    "files": [
+      "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
+    ]
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "martianatwork\\LaravelQueryCache\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
